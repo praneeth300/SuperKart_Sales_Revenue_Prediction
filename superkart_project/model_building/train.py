@@ -28,25 +28,25 @@ ytrain = pd.read_csv(ytrain_path).values.ravel()   # flatten for regression
 ytest = pd.read_csv(ytest_path).values.ravel()
 
 # ----------------------------
-# List of numerical features
+# Numerical features
 # ----------------------------
 numeric_features = [
-    'Product_Weight',           # Weight of the product
-    'Product_Allocated_Area',   # Shelf/area allocated to the product
-    'Product_MRP',              # Maximum Retail Price
-    'Store_Establishment_Year'  # Year the store was established
+    'Product_Weight',
+    'Product_Allocated_Area',
+    'Product_MRP',
+    'Store_Age_Years'   
 ]
 
 # ----------------------------
-# List of categorical features
+# Categorical features
 # ----------------------------
 categorical_features = [
-    'Product_Sugar_Content',      # e.g., Low Sugar, Regular
-    'Product_Type',               # e.g., Fruits and Vegetables, Snack Foods
-    'Store_Id',                   # Store code (OUT001, OUT004, etc.)
-    'Store_Size',                 # e.g., Small, Medium, High
-    'Store_Location_City_Type',   # e.g., Tier 1, Tier 2, Tier 3
-    'Store_Type'                  # e.g., Supermarket Type1, Grocery Store
+    'Product_Sugar_Content',
+    'Store_Size',
+    'Store_Location_City_Type',
+    'Store_Type',
+    'Product_Type_Category',
+    'Product_Id_char'
 ]
 
 # Define preprocessing steps
