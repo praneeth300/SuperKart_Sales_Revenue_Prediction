@@ -12,7 +12,7 @@ import mlflow
 import os
 
 mlflow.set_tracking_uri("http://localhost:8080")
-mlflow.set_experiment("SuperKart-Sales-Prediction-Experiment")
+mlflow.set_experiment("SuperKart-Sales-Prediction-Experiment2")
 
 # Hugging Face API authentication
 api = HfApi(token=os.getenv("HF_TOKEN"))
